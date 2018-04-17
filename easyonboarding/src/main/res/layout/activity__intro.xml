@@ -4,7 +4,7 @@
                 android:id="@+id/parent_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context=".intro_activity.EasyOnBoarding">
+                tools:context=".activity.EasyOnBoarding">
     <ImageView
         android:id="@+id/gradient_background" android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,11 +1,10 @@
 package com.fivemin.chief.onboardingeasy;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.fivemin.chief.easyonboarding.intro_activity.EasyOnBoarding;
-import com.fivemin.chief.easyonboarding.pages_intro.IntroCards;
+import com.fivemin.chief.easyonboarding.activity.EasyOnBoarding;
+import com.fivemin.chief.easyonboarding.pages.IntroCards;
 
 public class BasicIntro extends EasyOnBoarding {
 

@@ -1,4 +1,4 @@
-package com.fivemin.chief.easyonboarding.intro_activity;
+package com.fivemin.chief.easyonboarding.activity;
 
 import android.animation.Animator;
 import android.content.Context;
@@ -20,8 +20,8 @@ import android.widget.ImageView;
 
 import com.fivemin.chief.easyonboarding.R;
 import com.fivemin.chief.easyonboarding.adapter.IntroAdapter;
-import com.fivemin.chief.easyonboarding.pages_intro.IntroCards;
-import com.fivemin.chief.easyonboarding.pages_intro.IntroFragment;
+import com.fivemin.chief.easyonboarding.pages.IntroCards;
+import com.fivemin.chief.easyonboarding.pages.IntroFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,20 +39,14 @@ public class EasyOnBoarding extends AppCompatActivity implements
     @Override
     public void onPageSelected(int position) {
         if (position == pagesFragment.size() - 1) {
-            // fadeOut(circleIndicatorView);
             showFinish();
             fadeOut(layoutNavigation);
-            //fadeIn(ivPrev);
         } else if (position == 0) {
-            //fadeOut(ivPrev);
             fadeIn(layoutNavigation);
             hideFinish();
-            // fadeIn(circleIndicatorView);
         } else {
-            // fadeIn(circleIndicatorView);
             hideFinish();
             fadeIn(layoutNavigation);
-            //fadeIn(ivNext);
         }
 
     }
@@ -131,11 +125,11 @@ public class EasyOnBoarding extends AppCompatActivity implements
     }
 
     private void initViews() {
-        mViewPager = (ViewPager) findViewById(R.id.vp_pager);
-        btnFinish = (Button) findViewById(R.id.btnStart);
-        layoutNavigation = (FrameLayout) findViewById(R.id.layoutNavigation);
-        imgViewNext = (ImageView) findViewById(R.id.ivNext);
-        btnSkip = (Button) findViewById(R.id.btnSkip);
+        mViewPager = findViewById(R.id.vp_pager);
+        btnFinish = findViewById(R.id.btnStart);
+        layoutNavigation = findViewById(R.id.layoutNavigation);
+        imgViewNext = findViewById(R.id.ivNext);
+        btnSkip = findViewById(R.id.btnSkip);
     }
 
     @Override
@@ -147,7 +141,6 @@ public class EasyOnBoarding extends AppCompatActivity implements
         initListner();
         mViewPager.addOnPageChangeListener(this);
 
-        // mViewPager.setPageTransformer(true, new ParallaxPageTransformer());
 
         View decorView = getWindow().getDecorView();
 

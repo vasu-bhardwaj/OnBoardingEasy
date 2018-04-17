@@ -1,4 +1,4 @@
-package com.fivemin.chief.easyonboarding.pages_intro;
+package com.fivemin.chief.easyonboarding.pages;
 
 
 import android.support.annotation.ColorRes;

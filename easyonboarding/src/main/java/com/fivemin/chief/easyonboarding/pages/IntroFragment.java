@@ -1,4 +1,4 @@
-package com.fivemin.chief.easyonboarding.pages_intro;
+package com.fivemin.chief.easyonboarding.pages;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -125,9 +125,9 @@ public class IntroFragment extends Fragment {
     }
 
     private void initViews() {
-        titleIntro = (TextView) view.findViewById(R.id.titleText);
-        descriptionIntro = (TextView) view.findViewById(R.id.descriptionText);
-        imgBackground = (ImageView) view.findViewById(R.id.imgView_Background);
+        titleIntro = view.findViewById(R.id.titleText);
+        descriptionIntro = view.findViewById(R.id.descriptionText);
+        imgBackground = view.findViewById(R.id.imgView_Background);
     }
 
     private void getAttributes() {

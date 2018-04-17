@@ -5,15 +5,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.view.ViewGroup;
 
-import com.fivemin.chief.easyonboarding.pages_intro.IntroFragment;
+import com.fivemin.chief.easyonboarding.pages.IntroFragment;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * Created by chief on 5/4/18.
- */
-
 public class IntroAdapter extends FragmentStatePagerAdapter {
 
    private List<IntroFragment> pages = new ArrayList<>();
@@ -25,7 +20,6 @@ public class IntroAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        // TODO Auto-generated method stub
         super.destroyItem(container, position, object);
 
     }
