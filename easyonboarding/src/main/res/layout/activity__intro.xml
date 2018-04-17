@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/parent_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".intro_activity.EasyOnBoarding">
+    <ImageView
+        android:id="@+id/gradient_background" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:ignore="ContentDescription"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:clipToPadding="false"
+        android:overScrollMode="never"/>
+
+    <FrameLayout
+        android:id="@+id/layoutNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/marginTop_bottom">
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/full_transparent"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:letterSpacing="0.4"
+            android:text="@string/skip"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:typeface="monospace"/>
+
+        <ImageView
+            android:id="@+id/ivNext"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/next"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginTop_bottom">
+
+        <Button android:id="@+id/btnStart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/btn_welcome"
+                android:elevation="7dp"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:letterSpacing="0.3"
+                android:text="@string/get_started"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:typeface="monospace"
+                android:visibility="gone"/>
+
+    </FrameLayout>
+</RelativeLayout>

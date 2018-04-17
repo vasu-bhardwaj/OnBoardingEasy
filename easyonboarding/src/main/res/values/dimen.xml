@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="round_btn_radius">20dp</dimen>
+    <dimen name="image_arrow">32dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="round_image_size">128dp</dimen>
+    <dimen name="round_image_padding">12dp</dimen>
+    <dimen name="textSize_Title">30sp</dimen>
+    <dimen name="textSize_Description">14sp</dimen>
+
+
+
+    <dimen name="marginTop_Title">1dp</dimen>
+    <dimen name="marginTop_Description">20dp</dimen>
+    <dimen name="marginTop_Underline">20dp</dimen>
+    <dimen name="width_Underline">80dp</dimen>
+    <dimen name="height_Underline">7dp</dimen>
+    <dimen name="marginTop_bottom">20dp</dimen>
+
+</resources>

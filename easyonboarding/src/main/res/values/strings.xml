@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DefaultTitle1">Be Yourself</string>
+    <string name="DefaultDescription1">Be yourself. Because everything in the world is just taken. So be yourself.</string>
+    <string name="get_started"><![CDATA[Get Started >]]></string>
+    <string name="skip">SKIP</string>
+
+</resources>
