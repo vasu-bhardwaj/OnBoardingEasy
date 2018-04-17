@@ -3,7 +3,7 @@
 
 
 
-![Alt Text](https://github.com/vasu-bhardwaj/IntroV2/blob/master/previewImages/ImgPreview.gif)
+![Alt Text](https://github.com/vasu-bhardwaj/OnBoardingEasy/blob/master/preview/ImgPreview.gif)
 
 
 ## Features
@@ -166,7 +166,7 @@ card1.setDescriptionColor(R.color.colorAccent);
 
 ## Gradient Flow Background Slides
 
-![Alt Text](https://github.com/vasu-bhardwaj/IntroV2/blob/master/previewImages/GradientPreview.gif)
+![Alt Text](https://github.com/vasu-bhardwaj/OnBoardingEasy/blob/master/preview/GradientPreview.gif)
 
 
 
@@ -243,5 +243,5 @@ Else gradient  will not be visible.
 
 ## Getting Help
 
-If you are using IntroV in your app and would like to be listed here, please let us know by commenting in [this issue](https://github.com/vasu-bhardwaj/IntroV2/issues/1)!
+If you are using IntroV in your app and would like to be listed here, please let us know by commenting in [this issue]!(https://github.com/vasu-bhardwaj/OnBoardingEasy/issues/new)
 
