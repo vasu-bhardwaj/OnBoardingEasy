@@ -243,6 +243,6 @@ Else gradient  will not be visible.
 
 ## Getting Help
 
-If you are using IntroV in your app and would like to be listed here, please let us know by commenting in [this issue]!(https://github.com/vasu-bhardwaj/OnBoardingEasy/issues/new)
+To report a specific problem or feature request,, please let by opening a new Issue.(https://github.com/vasu-bhardwaj/OnBoardingEasy/issues/new)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
