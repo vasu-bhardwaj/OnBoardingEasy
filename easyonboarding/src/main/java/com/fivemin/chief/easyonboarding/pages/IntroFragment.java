@@ -93,7 +93,6 @@ public class IntroFragment extends Fragment {
             @Nullable Bundle savedInstanceState) {
 
 
-
         // Inflating the view
         view = inflater.inflate(R.layout.layout_intro_fragment, container, false);
         getAttributes();
@@ -105,16 +104,17 @@ public class IntroFragment extends Fragment {
     private void setAttributes() {
         // set title
         if (title != null) {
-            titleIntro.setText(title);
+            titleIntro.setText(title.toUpperCase());
         } else {
-            titleIntro.setText(getResources().getText(titleResId));
+            titleIntro.setText(getResources().getText(titleResId).toString().toUpperCase());
         }
 
         // set description
-        if (description !=null) {
-            descriptionIntro.setText(description);
+        if (description != null) {
+            descriptionIntro.setText(description.toUpperCase());
         } else {
-            descriptionIntro.setText(getResources().getText(descriptionResId));
+            descriptionIntro.setText(getResources().getText(
+                    descriptionResId).toString().toUpperCase());
         }
 
         titleIntro.setTextColor(getResources().getColor(titleColor));

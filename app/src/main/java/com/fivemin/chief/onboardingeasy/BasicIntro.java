@@ -29,8 +29,6 @@ public class BasicIntro extends EasyOnBoarding {
                 "First Wallpaper with Artificial Intelligence Capabilities");
 
         card1.setBackground(R.color.full_transparent);
-        // card1.setTitleColor(R.color.btnColir);
-        // card1.setDescriptionColor(R.color.colorAccent);
         IntroCards card2 = new IntroCards("Hankpicked Images", "Every Image is carefully selected");
 
         card2.setBackground(R.color.full_transparent);

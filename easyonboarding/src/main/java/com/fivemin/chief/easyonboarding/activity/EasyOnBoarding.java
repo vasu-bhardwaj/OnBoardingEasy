@@ -19,6 +19,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.fivemin.chief.easyonboarding.R;
+import com.fivemin.chief.easyonboarding.ViewPageIndicator;
 import com.fivemin.chief.easyonboarding.adapter.IntroAdapter;
 import com.fivemin.chief.easyonboarding.pages.IntroCards;
 import com.fivemin.chief.easyonboarding.pages.IntroFragment;
@@ -35,17 +36,22 @@ public class EasyOnBoarding extends AppCompatActivity implements
     private List<IntroFragment> pagesFragment;
     private Button btnFinish;
     private FrameLayout layoutNavigation;
+    private ViewPageIndicator mViewPageIndicator;
 
     @Override
     public void onPageSelected(int position) {
+        mViewPageIndicator.setCurrentPage(position);
         if (position == pagesFragment.size() - 1) {
+            fadeOut(mViewPageIndicator, true);
             showFinish();
             fadeOut(layoutNavigation);
         } else if (position == 0) {
             fadeIn(layoutNavigation);
+            fadeIn(mViewPageIndicator);
             hideFinish();
         } else {
             hideFinish();
+            fadeIn(mViewPageIndicator);
             fadeIn(layoutNavigation);
         }
 
@@ -103,11 +109,13 @@ public class EasyOnBoarding extends AppCompatActivity implements
      *
      * When using setGradient,make sure you have set background of
      * each intro page as transparent.
-     *</pre>
+     * </pre>
+     *
      * @param showGradient    is set to true, the gradient background will be displayed.
      * @param gradientListXML is the list of all the drawable gradient , in the resource folder
      */
-    public void setGradient(Boolean showGradient, @DrawableRes int gradientListXML,int durationFadeIn,int durationFadeOut) {
+    public void setGradient(Boolean showGradient, @DrawableRes int gradientListXML,
+            int durationFadeIn, int durationFadeOut) {
         if (showGradient) {
 
             ImageView imageView = findViewById(R.id.gradient_background);
@@ -130,15 +138,17 @@ public class EasyOnBoarding extends AppCompatActivity implements
         layoutNavigation = findViewById(R.id.layoutNavigation);
         imgViewNext = findViewById(R.id.ivNext);
         btnSkip = findViewById(R.id.btnSkip);
+        mViewPageIndicator = findViewById(R.id.indicatorViewPager);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setTheme(R.style.ThemeIntro);
         setContentView(R.layout.activity__intro);
         initViews();
         initListner();
+
         mViewPager.addOnPageChangeListener(this);
 
 
@@ -146,6 +156,10 @@ public class EasyOnBoarding extends AppCompatActivity implements
 
         pagesFragment = new ArrayList<>();
 
+    }
+
+    private void initViewPagerIndicater() {
+        mViewPageIndicator.setPageIndicators(pagesFragment.size());
     }
 
 
@@ -168,6 +182,7 @@ public class EasyOnBoarding extends AppCompatActivity implements
 
 
     public void setupIntro() {
+        initViewPagerIndicater();
         mIntroAdapter = new IntroAdapter(pagesFragment, getSupportFragmentManager());
         mViewPager.setAdapter(mIntroAdapter);
     }
