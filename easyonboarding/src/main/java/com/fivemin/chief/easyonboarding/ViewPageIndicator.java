@@ -32,10 +32,10 @@ public class ViewPageIndicator extends View {
     private void init(Context context) {
         this.context = context;
         activePageIndicater = new Paint(Paint.ANTI_ALIAS_FLAG);
-        activePageIndicater.setColor(Color.BLACK);
+        activePageIndicater.setColor(Color.WHITE);
 
         inactivePageIndicater = new Paint(Paint.ANTI_ALIAS_FLAG);
-        inactivePageIndicater.setColor(Color.WHITE);
+        inactivePageIndicater.setColor(getResources().getColor(R.color.colorDots));
 
         radius = 15;
         width = radius * 2;

@@ -2,6 +2,7 @@
 <resources>
     <color name="black_transparent_image">#46000000</color>
     <color name="grey_600">#757575</color>
+    <color name="colorDots">#a8a1d1d4</color>
     <color name="background">#757575</color>
     <color name="transparent_underline_color">#55736b6b</color>
     <color name="full_transparent">#00736b6b</color>
