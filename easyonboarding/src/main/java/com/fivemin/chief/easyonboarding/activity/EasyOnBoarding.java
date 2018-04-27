@@ -19,10 +19,11 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.fivemin.chief.easyonboarding.R;
-import com.fivemin.chief.easyonboarding.ViewPageIndicator;
 import com.fivemin.chief.easyonboarding.adapter.IntroAdapter;
+import com.fivemin.chief.easyonboarding.indicater.ViewPageIndicator;
 import com.fivemin.chief.easyonboarding.pages.IntroCards;
 import com.fivemin.chief.easyonboarding.pages.IntroFragment;
+import com.fivemin.chief.easyonboarding.transformer.DepthPageTransformer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -151,6 +152,7 @@ public class EasyOnBoarding extends AppCompatActivity implements
 
         mViewPager.addOnPageChangeListener(this);
 
+        mViewPager.setPageTransformer(true, new DepthPageTransformer());
 
         View decorView = getWindow().getDecorView();
 

@@ -4,6 +4,7 @@
                 android:id="@+id/parent_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/btnColir"
                 tools:context=".activity.EasyOnBoarding">
 
 
@@ -39,7 +40,7 @@
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:typeface="monospace"/>
-        <com.fivemin.chief.easyonboarding.ViewPageIndicator
+        <com.fivemin.chief.easyonboarding.indicater.ViewPageIndicator
             android:id="@+id/indicatorViewPager"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

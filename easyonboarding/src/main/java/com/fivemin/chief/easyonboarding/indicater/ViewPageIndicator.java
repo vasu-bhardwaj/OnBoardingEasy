@@ -1,4 +1,4 @@
-package com.fivemin.chief.easyonboarding;
+package com.fivemin.chief.easyonboarding.indicater;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,6 +9,8 @@ import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.fivemin.chief.easyonboarding.R;
 
 /**
  * Created by chief on 18/4/18.
@@ -36,10 +38,10 @@ public class ViewPageIndicator extends View {
 
         inactivePageIndicater = new Paint(Paint.ANTI_ALIAS_FLAG);
         inactivePageIndicater.setColor(getResources().getColor(R.color.colorDots));
-
-        radius = 15;
+        radius = 10;
         width = radius * 2;
     }
+
 
     @Override
     protected void onDraw(Canvas canvas) {
