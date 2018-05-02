@@ -58,7 +58,6 @@
             android:gravity="center_horizontal"
             android:letterSpacing="0.5"
             android:lineSpacingExtra="10dp"
-            android:maxLines="4"
             android:text="@string/DefaultDescription1"
             android:textAllCaps="true"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
