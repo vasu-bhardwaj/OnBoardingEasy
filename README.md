@@ -33,7 +33,7 @@ Add it in your root build.gradle at the end of repositories:
 ```gradle
 
 	dependencies {
-	        implementation 'com.github.vasu-bhardwaj:OnBoardingEasy:v1.6.1'
+	        implementation 'com.github.vasu-bhardwaj:OnBoardingEasy:v1.6.2'
 	}
 ```
 	
