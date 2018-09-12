@@ -1,5 +1,5 @@
 # OnBoardingEasy
- An Android library that allows you to easily create applications with OnBoarding/Intro pages. You may use it in your Android apps provided that you cite this project and include the license in your app. Thanks!
+ An Android library that allows you to easily create applications with OnBoarding/Intro pages. You may use it in your Android apps it would be awesome that you cite this project in your app. Thanks!
 
 
 
